@@ -27,7 +27,7 @@ export default function Home() {
 
   const [textoBuscaDigitado, setTextoBuscaDigitado] = useState("");// Inicia com a caixa de texto(input) vazia o que mudara apenas ao digitar.     
 
-  const [botaoClicado, setBotaoClicado] = useState("");// Inicia com o botão de categoria "apagado",ou seja sem uma cor de background inicial
+  const [botaoClicado, setBotaoClicado] = useState("Menu");// Inicia com o botão de categoria "apagado",ou seja sem uma cor de background inicial
 
   const handleBusca = (textoDigitado) => {//Irá buscar o produto através do texto digitado se o texto for maior ou igual a três
     setTextoBuscaDigitado(textoDigitado);// vai colocar na caixa de texto (input) o texto digitado
@@ -37,6 +37,7 @@ export default function Home() {
     setBotaoClicado("");// vai deixar os botês de categorias "apagados".
     setTituloInicio("");// Vai deixar em branco o titulo de início
     setTituloGeral("");// Vai deixar sem titulo geral
+    setBotaoClicado("Menu");// Irá acender o botão de Menu na hora da busca através do texto digitado.
     if (textoDigitado === "") {
       setTituloInicio("Entradas");// Vai colocar como titulo de inicio Entradas
       setTituloGeral("Cardapio")// Vai colocar como titulo de Geral Cardapio
@@ -55,10 +56,10 @@ export default function Home() {
     setTituloGeral("");// Vai deixar sem titulo geral
   };
 
-  const handleLimparBusca = () => {
+  const handleLimparBusca = (categoria) => {
     setDadosFiltrados(produtosEntradas);// irá mostrar novamente os produtos de entrada
     setListaDeProdutos(retornarProdutos);// irá mostrar novamente todos os produtos da lista de produtos
-    setBotaoClicado("");// vai deixar os botês de categorias "apagados".
+    setBotaoClicado(categoria);// vai acender os botão de menu novamente.
     setTextoBuscaDigitado("");// vai apagar qualquer texto da caixa de texto (input)
     setTituloInicio("Entradas")// Vai colocar como titulo de inicio Entradas
     setTituloGeral("Cardapio")// Vai colocar como titulo de geral Cardapio

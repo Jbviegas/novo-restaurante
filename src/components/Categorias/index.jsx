@@ -14,8 +14,8 @@ const Categorias = ({ handleFiltro, botaoClicado, handleLimparBusca }) => {
     return (
         <section className={styles.secao_categorias}>
             <div className={styles.container_botoes}>
-                <button className={botaoClicado === "Home" ? styles.acenderBtn : styles.apagarBtn}
-                    onClick={() => handleLimparBusca("Home")}>Menu
+                <button className={botaoClicado === "Menu" ? styles.acenderBtn : styles.apagarBtn}
+                    onClick={() => handleLimparBusca("Menu")}>Menu
                 </button>
 
                 <button className={botaoClicado === "Entradas" ? styles.acenderBtn : styles.apagarBtn}/* Se botão clicado for o botão da categoria
