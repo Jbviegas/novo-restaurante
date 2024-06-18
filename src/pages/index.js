@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Head from 'next/head';
 import styles from "../styles/Home.module.css";
-import banner from "../../public/Assets/img/banner.png";
+import banner from "../../public/img/banner.png";
 
 import React from 'react';
 import { useState } from "react";

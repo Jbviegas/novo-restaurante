@@ -3,12 +3,12 @@ import styles from "./Categorias.module.css";
 
 import Image from 'next/image'
 
-import icone1 from "../../../public/assets/img/entrada.png";
-import icone2 from "../../../public/assets/img/massa.png";
-import icone3 from "../../../public/assets/img/carne.png";
-import icone4 from "../../../public/assets/img/bebidas.png";
-import icone5 from "../../../public/assets/img/salada.png";
-import icone6 from "../../../public/assets/img/sobremesa.png";
+import icone1 from "../../../public/img/entrada.png";
+import icone2 from "../../../public/img/massa.png";
+import icone3 from "../../../public/img/carne.png";
+import icone4 from "../../../public/img/bebidas.png";
+import icone5 from "../../../public/img/salada.png";
+import icone6 from "../../../public/img/sobremesa.png";
 
 const Categorias = ({ handleFiltro, botaoClicado, handleLimparBusca }) => {
     return (

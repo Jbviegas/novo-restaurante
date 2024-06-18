@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 import styles from "./CampoDeBusca.module.css";
-import lupa from "../../../public/Assets/img/lupa.png";
+import lupa from "../../../public/img/lupa.png";
 
 const CampoDeBusca = ({ textoBuscaDigitado, handleBusca }) => {
     return (
